@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    min-width: 1340px;
+}
+#container{
+    width: 100%;
+    /* height: 100%; */ 
+    /* background-color: antiquewhite; */
+    position: relative;
+}
+.divider{
+    width: 100%;
+    border: 1px wheat solid;
+}
+#firstnav{
+    position: relative;
+    width: 100%;    /*如果设置为固定大小px,自然不会随窗口大小变化而变化*/
+    /* background-color: aquamarine; */
+    /* overflow: hidden; */
+}
+#bannertop{
+    /* width: 100%; */
+    position: absolute;
+    top: 15%;
+}
+#bannertop h1{
+    font-size: 50px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 50px;
+    text-align: center;
+}
+#bannertop a{
+    font-size: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 300px 50px 300px;
+    text-align: center;
+    display: inline-block;
+}
+#bannersearch{
+    margin: 0 auto;
+    text-align: center;
+    border: 1px whitesmoke solid;
+    border-radius: 15px 15px 15px;
+    width: 70%;
+    color: white;
+}
+#bannersearch form h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+}
+#bannersearch form h4{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 0px 0px 40px 0px;
+    font-style: italic;
+    font-weight: normal;
+}
+.inputgroup{        /*整个input样式居中*/
+    text-align: center;
+}
+.inputgroup input{  /*input元素样式*/
+    padding: 15px;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*part2*/
+#secondnav{
+    /* width: 100%; */
+    position: relative;
+    margin-bottom: 100px;
+}
+#secondtop{
+    position: absolute;
+    /* width: 100%; */
+    top: 5%;
+}
+.secondtoph4{   
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px;
+    text-align: center;  
+}
+#secondtop h2{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px 300px 30px 300px;
+    text-align: center; 
+    font-weight: normal;
+}
+.icongroup{
+    display: flex;      /*弹性布局*/
+    /* flex: 0 0 auto; */
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+    justify-content: center;    
+    position: relative;
+}
+#firsticon,#secondicon,#thirdicon,#fourthicon{
+    /* border: 1px solid black; */
+    /* padding: 100px 300px 50px 50px; */
+    padding:100px 350px 50px 270px;;
+    text-align: center;
+    /* flex: 2 250px; */
+    position:relative;
+}
+/* #secondicon{
+    border: 1px solid black;
+    text-align: center;
+    flex: 2 250px;
+    padding:100px 200px 50px 100px;
+    position:relative;
+} */
+/* #thirdicon{
+    border: 1px solid black;
+    text-align: center;
+    flex: 2 250px;
+    padding:100px 200px 50px 100px;
+    position:relative;
+} */
+/* #fourthicon{
+    border: 1px solid black;
+    text-align: center;
+    padding:100px 200px 50px 100px;
+    flex: 2 250px;
+    position:relative;
+} */
+.firsta{                /*合并a同属性*/
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 50%
+}
+
+/* #firsticon a{
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 50%
+}
+#secondicon a{
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 50%
+}
+#thirdicon a{
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 50%
+}
+#fourthicon a{
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+} */
+.seconda{
+    
+}
+.icondiv{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    text-align: left;
+}
+.icondivh4{
+    text-align: left;
+    padding: 20px 0px; 
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace
+}
+.icondiv a{
+    padding-top: 5%;
+    display: inline-block;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+/*part3*/
+#thirdnav{
+    position: relative;
+}
+#thirdfont{
+    position: absolute;
+    /* top: 20%; */
+    top: 100px;
+    left: 150px;
+    /* left: 10%; */
+    color: white;
+    width: 380px;
+}
+#thirdfont h2{
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: normal;
+}
+#thirdfont a{
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+#thirdinput input{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding: 10px;
+    margin: 1px;
+    border-radius: 5px 5px 5px;
+    background-color:transparent;
+}
+#thirdinput input.active{   /*默认选中白背景黑字*/
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#thirdinput :hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/*part4*/
+/* #fourthnav{
+    position: relative;
+    width: 100%;
+}
+#fourthicongroup{
+    position: absolute;
+    top: 30px;
+}
+#fourthicongroup {
+    color: cornflowerblue;
+    text-align: right;
+    display: inline-block;
+}
+.fourthiconclass{
+    display: flex;
+    flex-wrap: wrap;
+}
+#fourthicon1{
+    flex: 1 200px;
+}
+#fourthicon2{
+    flex: 1 200px;
+}
+#fourthicon3{
+    flex: 1 200px;
+} */
+#fourthnav h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: cornflowerblue;
+    font-size: 50px;
+    padding: 75px;
+}
+
+.fourthiconclass{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#fourthicon1,   /*合并*/
+#fourthicon2,
+#fourthicon3
+{
+    flex: 1 200px;
+    padding: 30px;
+}
+/* #fourthicon1 a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 370px;
+} */
+/* #fourthicon2{
+    flex: 1 200px;
+    padding: 30px;
+} */
+/* #fourthicon2 a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 380px;
+} */
+/* #fourthicon3{
+    flex: 1 200px;
+    padding: 30px;
+} */
+/* #fourthicon3 a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 380px;
+} */
+#fourthicon1 a,     /*合并*/
+#fourthicon2 a,
+#fourthicon3 a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 380px;
+}
+
+/*part5*/
+#fifthnav{
+    position: relative;
+    padding: 60px;
+}
+#fifthicongroup{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 50px 0px; 
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#fifthicon1{
+    /* width: 800px; */
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+}
+#fifthicon1 a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    left: 680px;
+    width: 400px;
+}
+#fifthicon1 h2{
+    position: absolute;
+    top: 10px;
+    left: 680px;
+    width: 400px;
+}
+#fifthicon2{
+    position: relative;
+    /* margin: 50px 0px; */
+    margin: 30px auto;
+}
+#fifthicon2 a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    width: 400px;
+
+}
+#fifthicon2 h2{
+    position: absolute;
+    top: 10px;
+    width: 400px;
+}
+#fifthicon1 img{
+    padding-right: 500px;
+}
+#fifthicon2 img{
+    padding-left: 500px;
+}
+
+/*part6*/
+.sixthnav{
+
+}
+.sixthdiv{
+
+}
+.sixthfontgroup h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 30px;
+    margin: 20px;
+}
+.sixthfontgroup a{
+    width: 600px;
+    display: inline-block;
+    color: grey;
+}
+#sixthheader{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content : center; /*元素在主轴居中*/
+}
+.headergroup{
+    padding: 20px 40px;
+}
+#header1{
+    flex: 0 250px;
+    position: relative;
+}
+#header1 img:hover {
+    cursor: pointer;
+    opacity: 0.3;       /*透明度*/
+}
+
+#header2{
+    flex: 0 250px;
+}
+#header3{
+    flex: 0 100px;
+}
+#header4{
+    flex: 0 100px;
+}
+
+/*part7*/
+#seventhnav{
+    display: flex;
+    flex: 1 auto;
+    margin: 40px 50px;
+    padding: 0px 150px;
+}
+#seventhdiv{
+    border: 1px solid grey;
+    border-radius: 15px 15px 15px ;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    /* flex: 1 1 1000px; */
+    margin: 0 auto;
+}
+#seventhdiv h2{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 40px;
+}
+.seventhinput{
+    padding: 10px 50px;
+    margin: 10px auto;
+}
+.seventhgroup{
+    text-align: center;
+    /* margin: 20px auto; */
+    margin: 10px 0px 50px 0px;
+
+}
+.seventhbtn{
+    padding: 10px 50px;
+    background-color: black;
+    color: cornflowerblue;
+    text-align: center;
+}
+.seventhcontacts{
+    width: 100px;
+    position: relative;
+}
+.seventhfonts{
+    width: 360px;
+    /* position: absolute; */
+    /* left: 10px; */
+    margin: 20px 100px;
+    /* right: 50px; */
+    padding:0 0px;
+    position: relative;
+}
+.seventhfonts h2{
+    padding-bottom: 30px;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+#sevenfonta{
+    margin-bottom: 50px;
+    display: inline-block;
+    color: gray;
+}
+.sevenicon{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.sevenicon a{
+    position: absolute;
+    left: 30px;
+    padding: 0 10px;
+}
+
+/*part8*/
+#lastfooter{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex: 1 auto;
+    padding: 30px 60px;
+
+}
+.footergroup{
+    /* border: 1px solid aqua; */
+    margin: 0 auto;
+    padding: 15px 50px;
+}
+#footer1{
+    
+}
+#footer1 h2,
+#footer2 h2,
+#footer3 h2,
+#footer4 h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+#footer1 a,
+#footer2 a,
+#footer3 a,
+#footer4 a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+#footer2{
+    
+}
+#footer3{
+    
+}
+#footer4{
+   
+}
+#footer4 img{
+    margin: 20px 5px;
+}
+#footer4 img:hover{
+    cursor: pointer;
+}
